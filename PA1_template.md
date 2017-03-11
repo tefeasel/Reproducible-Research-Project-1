@@ -60,6 +60,9 @@ median(total$tot)
 ## [1] 10765
 ```
 
+- The mean number of steps per day is 1.0766189 &times; 10<sup>4</sup>
+- The median number of steps per is 10765
+
 #What is the average daily activity pattern
 
 ```r
@@ -128,7 +131,7 @@ median(total_na_filled$total)
 ## [1] 10766.19
 ```
 
-Using the mean for each interval for imputation does not change the mean
+Using the mean for each interval for imputation does not change the mean (still 1.0766189 &times; 10<sup>4</sup>)
 when calculated without imputation (specifically, omitting the missing values). The median, however, is now equal to the mean.
 
 #Weekdays vs. Weekends

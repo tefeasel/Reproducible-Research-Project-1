@@ -252,6 +252,11 @@ median(total$tot)
 <pre><code>## [1] 10765
 </code></pre>
 
+<ul>
+<li>The mean number of steps per day is 1.0766189 &times; 10<sup>4</sup></li>
+<li>The median number of steps per is 10765</li>
+</ul>
+
 <p>#What is the average daily activity pattern</p>
 
 <pre><code class="r">interval &lt;- data %&gt;%
@@ -310,7 +315,7 @@ median(total_na_filled$total)
 <pre><code>## [1] 10766.19
 </code></pre>
 
-<p>Using the mean for each interval for imputation does not change the mean
+<p>Using the mean for each interval for imputation does not change the mean (still 1.0766189 &times; 10<sup>4</sup>)
 when calculated without imputation (specifically, omitting the missing values). The median, however, is now equal to the mean.</p>
 
 <p>#Weekdays vs. Weekends</p>

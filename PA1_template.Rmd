@@ -36,6 +36,9 @@ mean(total$tot)
 median(total$tot)
 ```
 
+- The mean number of steps per day is `r mean(total$tot)`
+- The median number of steps per is `r median(total$tot)`
+
 #What is the average daily activity pattern
 ```{r}
 interval <- data %>%
@@ -74,7 +77,7 @@ mean(total_na_filled$total)
 median(total_na_filled$total)
 ```
 
-Using the mean for each interval for imputation does not change the mean
+Using the mean for each interval for imputation does not change the mean (still `r mean(total_na_filled$total)`)
 when calculated without imputation (specifically, omitting the missing values). The median, however, is now equal to the mean.
 
 #Weekdays vs. Weekends
